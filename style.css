@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #afedbe;
+    font-family: 'Oswald', sans-serif;
+}
+
+header  #pesquisa, header  #filtro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 80px;
+    margin: 5px 20px;
+    
+}
+
+
+header  #pesquisa{
+    width: 70%;
+    font-size: 24px;
+    color: #000;
+}
+
+header  #pesquisa input{
+    width: 60%;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+
+    padding: 0 10px;
+    font-size: 15px;
+
+    background-image: url(./assets/search_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+}
+
+header  #pesquisa p{
+
+    font-weight: 700;
+    margin: 0 10px 0 0;
+    
+}
+
+header  #filtro{
+    border: solid 2px black;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+
+    transition: 0.5s;
+
+}
+
+header  #filtro:hover{
+    cursor: pointer;
+    background: #d0f7da;
+}
+
+
+header  #filtro img{
+    margin: 0 3px 0 0;
+    width: 25px;
+    
+}
+
+main{
+    margin: auto;
+    margin-top: 15px;
+    width: 90%;
+    
+}
+
+main #Banner h3, main #Cardapio h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: #2ba64b;
+    margin-bottom: 5px;
+
+}
+
+main #Banner img{
+    width: 100%;
+    height: 550px;
+    filter: brightness(60%);
+}
+
+main #Banner #Promocao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    margin: auto;
+
+    z-index: 1;
+    margin-top: -200px;
+    filter: brightness(100%);
+
+    margin-bottom: 100px;
+}
+
+main #Banner #Promocao h3{
+    width: 250px;
+
+}
+
+main #Banner #Promocao button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    background: #2ba64b;
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+main #Banner #Promocao button:hover{
+    background: #59ba72;
+}
+
+main #Cardapio #itens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main #Cardapio #itens .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: solid 2px #2ba64b;
+    border-radius: 5px;
+    width: 48%;
+    height: 150px;
+
+    margin-bottom: 10px;
+
+
+
+}
+
+main #Cardapio #itens .card img{
+    width: 25%;
+    height: 100%;
+}
+
+main #Cardapio #itens .card .descricao{
+    margin: 0 15px;
+
+}
+
+main #Cardapio #itens .card .descricao h3,
+main #Cardapio #itens .card .descricao p {
+    margin: 40px 0;
+
+    font-family: 'Oswald', sans-serif;
+    color: #2ba64b;
+}
+
+main #Cardapio #itens .card .qtd-valor .valor{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2ba64b;
+    margin-right: 30px;
+}
+
+main #Cardapio #itens .card .qtd-valor .qtd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+main #Cardapio #itens .card .qtd-valor .qtd p{
+    border-radius: 5px 0 0 5px;
+    background: #2ba64b; 
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    
+    width: 30px;
+    cursor: pointer;
+
+
+}
+
+main #Cardapio #itens .card .qtd-valor .qtd .sub{
+    border-radius: 5px 0 0 5px;
+    transition: 0.5s;
+    
+}
+
+main #Cardapio #itens .card .qtd-valor .qtd .add{
+    border-radius: 0 5px 5px 0;
+    transition: 0.5s;
+}
+
+main #Cardapio #itens .card .qtd-valor .qtd .sub:hover,
+main #Cardapio #itens .card .qtd-valor .qtd .add:hover{
+    background: #88d19b;
+    
+}
+
+main #Cardapio #itens .card .qtd-valor .qtd .quantia{
+    background: #88d19b;
+    color: black;
+
+    cursor: default;
+}
+
+footer #pedido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+
+}
+
+footer #pedido h3, footer #pedido p {
+    padding: 3px 0;
+}
+
+footer #logo, footer #links{
+    width: 25%;
+    text-align: center;
+}
+
+footer #logo img{
+    width: 210px;
+    cursor: pointer;
+}
+
+footer #pedido img{
+    width: 40px;
+}
+
+footer #pedido button{
+
+    border: 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+
+    margin: 5px 0;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: #afedbe;
+}
+
+footer #pedido #pedir{
+    background: #000000;
+}
+
+footer #pedido #pedir:hover, footer #pedido #cadastrar:hover{  
+    background: #88d19b;
+    color: #000000;
+    transition: 0.5s;
+}
+
+footer #pedido #cadastrar {
+    background: #000000;
+}
+
+footer #pedido input{
+    padding-left: 10px;
+    width: 350px;
+    height: 35px;
+
+
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+
+    color: black;
+    font-size: 18px;
+
+    background-image: url(./assets/email.svg);
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: center;
+    background-size: 25px;
+}
+
+footer #links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer #links img {
+    width: 40px;
+    margin-top: 5px;
+    cursor: pointer;
+}
